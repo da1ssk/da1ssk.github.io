@@ -1,9 +1,43 @@
-*{
-margin:10;
-padding:10;
-}
-li{ list-style-type:circle;}
-body{
-line-height:1.8;
-font-size:80%;
+/* Mikan Voice Chat Theme - Orange */
+:root {
+    /* Gradient colors */
+    --gradient-1: #1a1410;
+    --gradient-2: #2d2419;
+    --gradient-3: #4a3821;
+
+    /* Particle effects */
+    --particle-1: rgba(251, 146, 60, 0.1);
+    --particle-2: rgba(249, 115, 22, 0.1);
+    --particle-3: rgba(234, 88, 12, 0.1);
+
+    /* Glow effects */
+    --glow-1: rgba(251, 146, 60, 0.5);
+    --glow-2: rgba(251, 146, 60, 0.3);
+    --glow-1-hover: rgba(251, 146, 60, 0.8);
+    --glow-2-hover: rgba(251, 146, 60, 0.5);
+    --glow-1-mid: rgba(251, 146, 60, 0.7);
+    --glow-2-mid: rgba(251, 146, 60, 0.4);
+
+    /* Subtitle */
+    --subtitle-color: #fdba74;
+    --subtitle-glow: rgba(253, 186, 116, 0.3);
+
+    /* Links */
+    --link-glow: rgba(251, 146, 60, 0.15);
+    --icon-glow: rgba(251, 146, 60, 0.5);
+    --icon-glow-hover: rgba(251, 146, 60, 0.8);
+
+    /* Hover states */
+    --hover-bg: rgba(251, 146, 60, 0.2);
+    --hover-gradient: linear-gradient(135deg, rgba(251, 146, 60, 0.2), rgba(249, 115, 22, 0.15));
+    --hover-border: rgba(251, 146, 60, 0.6);
+    --hover-shadow: rgba(251, 146, 60, 0.4);
+    --hover-text: #fb923c;
+
+    /* Accent colors */
+    --accent-color: #fb923c;
+    --accent-glow: rgba(251, 146, 60, 0.3);
+
+    /* Selection */
+    --selection-bg: rgba(251, 146, 60, 0.3);
 }

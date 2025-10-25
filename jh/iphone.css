@@ -1,9 +1,43 @@
-*{
-margin:10;
-padding:10;
-}
-li{ list-style-type:circle;}
-body{
-line-height:1.8;
-font-size:80%;
+/* Jellyfish Heaven Theme - Blue/Aqua */
+:root {
+    /* Gradient colors */
+    --gradient-1: #0f1419;
+    --gradient-2: #1a2832;
+    --gradient-3: #2d4a5c;
+
+    /* Particle effects */
+    --particle-1: rgba(34, 211, 238, 0.1);
+    --particle-2: rgba(14, 165, 233, 0.1);
+    --particle-3: rgba(59, 130, 246, 0.1);
+
+    /* Glow effects */
+    --glow-1: rgba(34, 211, 238, 0.5);
+    --glow-2: rgba(34, 211, 238, 0.3);
+    --glow-1-hover: rgba(34, 211, 238, 0.8);
+    --glow-2-hover: rgba(34, 211, 238, 0.5);
+    --glow-1-mid: rgba(34, 211, 238, 0.7);
+    --glow-2-mid: rgba(34, 211, 238, 0.4);
+
+    /* Subtitle */
+    --subtitle-color: #67e8f9;
+    --subtitle-glow: rgba(103, 232, 249, 0.3);
+
+    /* Links */
+    --link-glow: rgba(34, 211, 238, 0.15);
+    --icon-glow: rgba(34, 211, 238, 0.5);
+    --icon-glow-hover: rgba(34, 211, 238, 0.8);
+
+    /* Hover states */
+    --hover-bg: rgba(34, 211, 238, 0.2);
+    --hover-gradient: linear-gradient(135deg, rgba(34, 211, 238, 0.2), rgba(14, 165, 233, 0.15));
+    --hover-border: rgba(34, 211, 238, 0.6);
+    --hover-shadow: rgba(34, 211, 238, 0.4);
+    --hover-text: #22d3ee;
+
+    /* Accent colors */
+    --accent-color: #22d3ee;
+    --accent-glow: rgba(34, 211, 238, 0.3);
+
+    /* Selection */
+    --selection-bg: rgba(34, 211, 238, 0.3);
 }

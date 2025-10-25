@@ -1,9 +1,57 @@
-*{
-margin:10;
-padding:10;
+/* Fake Browser Theme - Yellow/Lime Playful */
+:root {
+    /* Gradient colors */
+    --gradient-1: #1a1810;
+    --gradient-2: #2d2a19;
+    --gradient-3: #4a4021;
+
+    /* Particle effects */
+    --particle-1: rgba(234, 179, 8, 0.1);
+    --particle-2: rgba(250, 204, 21, 0.1);
+    --particle-3: rgba(132, 204, 22, 0.1);
+
+    /* Glow effects */
+    --glow-1: rgba(234, 179, 8, 0.5);
+    --glow-2: rgba(234, 179, 8, 0.3);
+    --glow-1-hover: rgba(234, 179, 8, 0.8);
+    --glow-2-hover: rgba(234, 179, 8, 0.5);
+    --glow-1-mid: rgba(234, 179, 8, 0.7);
+    --glow-2-mid: rgba(234, 179, 8, 0.4);
+
+    /* Subtitle */
+    --subtitle-color: #fde047;
+    --subtitle-glow: rgba(253, 224, 71, 0.3);
+
+    /* Links */
+    --link-glow: rgba(234, 179, 8, 0.15);
+    --icon-glow: rgba(234, 179, 8, 0.5);
+    --icon-glow-hover: rgba(234, 179, 8, 0.8);
+
+    /* Hover states */
+    --hover-bg: rgba(234, 179, 8, 0.2);
+    --hover-gradient: linear-gradient(135deg, rgba(234, 179, 8, 0.2), rgba(132, 204, 22, 0.15));
+    --hover-border: rgba(234, 179, 8, 0.6);
+    --hover-shadow: rgba(234, 179, 8, 0.4);
+    --hover-text: #eab308;
+
+    /* Accent colors */
+    --accent-color: #eab308;
+    --accent-glow: rgba(234, 179, 8, 0.3);
+
+    /* Selection */
+    --selection-bg: rgba(234, 179, 8, 0.3);
 }
-li{ list-style-type:circle;}
-body{
-line-height:1.8;
-font-size:80%;
+
+/* Special styling for the note */
+.note {
+    margin-top: 2rem;
+    text-align: center;
+    animation: fadeInUp 0.8s ease-out 1.1s backwards;
+}
+
+.note p {
+    font-size: 0.9rem;
+    color: var(--subtitle-color);
+    opacity: 0.7;
+    font-style: italic;
 }

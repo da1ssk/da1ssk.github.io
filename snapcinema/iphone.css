@@ -1,9 +1,43 @@
-*{
-margin:10;
-padding:10;
-}
-li{ list-style-type:circle;}
-body{
-line-height:1.8;
-font-size:80%;
+/* SnapCinema Theme - Red/Cinema */
+:root {
+    /* Gradient colors */
+    --gradient-1: #1a0f0f;
+    --gradient-2: #2d1a1a;
+    --gradient-3: #4a2d2d;
+
+    /* Particle effects */
+    --particle-1: rgba(248, 113, 113, 0.1);
+    --particle-2: rgba(239, 68, 68, 0.1);
+    --particle-3: rgba(220, 38, 38, 0.1);
+
+    /* Glow effects */
+    --glow-1: rgba(248, 113, 113, 0.5);
+    --glow-2: rgba(248, 113, 113, 0.3);
+    --glow-1-hover: rgba(248, 113, 113, 0.8);
+    --glow-2-hover: rgba(248, 113, 113, 0.5);
+    --glow-1-mid: rgba(248, 113, 113, 0.7);
+    --glow-2-mid: rgba(248, 113, 113, 0.4);
+
+    /* Subtitle */
+    --subtitle-color: #fca5a5;
+    --subtitle-glow: rgba(252, 165, 165, 0.3);
+
+    /* Links */
+    --link-glow: rgba(248, 113, 113, 0.15);
+    --icon-glow: rgba(248, 113, 113, 0.5);
+    --icon-glow-hover: rgba(248, 113, 113, 0.8);
+
+    /* Hover states */
+    --hover-bg: rgba(248, 113, 113, 0.2);
+    --hover-gradient: linear-gradient(135deg, rgba(248, 113, 113, 0.2), rgba(239, 68, 68, 0.15));
+    --hover-border: rgba(248, 113, 113, 0.6);
+    --hover-shadow: rgba(248, 113, 113, 0.4);
+    --hover-text: #f87171;
+
+    /* Accent colors */
+    --accent-color: #f87171;
+    --accent-glow: rgba(248, 113, 113, 0.3);
+
+    /* Selection */
+    --selection-bg: rgba(248, 113, 113, 0.3);
 }

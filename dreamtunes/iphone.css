@@ -1,9 +1,43 @@
-*{
-margin:10;
-padding:10;
-}
-li{ list-style-type:circle;}
-body{
-line-height:1.8;
-font-size:80%;
+/* DreamTunes Theme - Purple/Pink Music */
+:root {
+    /* Gradient colors */
+    --gradient-1: #1a0f2e;
+    --gradient-2: #2d1b4e;
+    --gradient-3: #4a2c6d;
+
+    /* Particle effects */
+    --particle-1: rgba(168, 85, 247, 0.1);
+    --particle-2: rgba(236, 72, 153, 0.1);
+    --particle-3: rgba(139, 92, 246, 0.1);
+
+    /* Glow effects */
+    --glow-1: rgba(168, 85, 247, 0.5);
+    --glow-2: rgba(168, 85, 247, 0.3);
+    --glow-1-hover: rgba(168, 85, 247, 0.8);
+    --glow-2-hover: rgba(168, 85, 247, 0.5);
+    --glow-1-mid: rgba(168, 85, 247, 0.7);
+    --glow-2-mid: rgba(168, 85, 247, 0.4);
+
+    /* Subtitle */
+    --subtitle-color: #c4b5fd;
+    --subtitle-glow: rgba(196, 181, 253, 0.3);
+
+    /* Links */
+    --link-glow: rgba(168, 85, 247, 0.15);
+    --icon-glow: rgba(168, 85, 247, 0.5);
+    --icon-glow-hover: rgba(168, 85, 247, 0.8);
+
+    /* Hover states */
+    --hover-bg: rgba(168, 85, 247, 0.2);
+    --hover-gradient: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.15));
+    --hover-border: rgba(168, 85, 247, 0.6);
+    --hover-shadow: rgba(168, 85, 247, 0.4);
+    --hover-text: #a855f7;
+
+    /* Accent colors */
+    --accent-color: #a855f7;
+    --accent-glow: rgba(168, 85, 247, 0.3);
+
+    /* Selection */
+    --selection-bg: rgba(168, 85, 247, 0.3);
 }
