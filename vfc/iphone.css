@@ -1,9 +1,43 @@
-*{
-margin:10;
-padding:10;
-}
-li{ list-style-type:circle;}
-body{
-line-height:1.8;
-font-size:80%;
+/* Vintage Film Camera Theme - Warm Sepia/Brown */
+:root {
+    /* Gradient colors */
+    --gradient-1: #1a1410;
+    --gradient-2: #2d2419;
+    --gradient-3: #3d3021;
+
+    /* Particle effects */
+    --particle-1: rgba(210, 180, 140, 0.1);
+    --particle-2: rgba(139, 115, 85, 0.1);
+    --particle-3: rgba(205, 133, 63, 0.1);
+
+    /* Glow effects */
+    --glow-1: rgba(210, 180, 140, 0.5);
+    --glow-2: rgba(210, 180, 140, 0.3);
+    --glow-1-hover: rgba(210, 180, 140, 0.8);
+    --glow-2-hover: rgba(210, 180, 140, 0.5);
+    --glow-1-mid: rgba(210, 180, 140, 0.7);
+    --glow-2-mid: rgba(210, 180, 140, 0.4);
+
+    /* Subtitle */
+    --subtitle-color: #c4a777;
+    --subtitle-glow: rgba(196, 167, 119, 0.3);
+
+    /* Links */
+    --link-glow: rgba(210, 180, 140, 0.15);
+    --icon-glow: rgba(210, 180, 140, 0.5);
+    --icon-glow-hover: rgba(210, 180, 140, 0.8);
+
+    /* Hover states */
+    --hover-bg: rgba(210, 180, 140, 0.2);
+    --hover-gradient: linear-gradient(135deg, rgba(210, 180, 140, 0.2), rgba(139, 115, 85, 0.15));
+    --hover-border: rgba(210, 180, 140, 0.6);
+    --hover-shadow: rgba(210, 180, 140, 0.4);
+    --hover-text: #d2b48c;
+
+    /* Accent colors */
+    --accent-color: #d2b48c;
+    --accent-glow: rgba(210, 180, 140, 0.3);
+
+    /* Selection */
+    --selection-bg: rgba(210, 180, 140, 0.3);
 }
