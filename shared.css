@@ -213,6 +213,68 @@ h1 {
     filter: brightness(1.1);
 }
 
+/* Multi-store badge container */
+.store-badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 2.5rem auto 3rem;
+    animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+.store-badges .app-store-badge,
+.store-badges .google-play-badge {
+    margin: 0;
+    animation: none;
+    text-align: center;
+}
+
+.google-play-badge a {
+    display: inline-block;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    background: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    transition: all 0.3s ease;
+    overflow: visible;
+}
+
+.google-play-badge a::before {
+    display: none !important;
+}
+
+.google-play-badge a:hover {
+    transform: translateY(-3px) scale(1.05);
+    background: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    color: inherit;
+}
+
+.google-play-badge img {
+    height: 50px;
+    width: auto;
+    border: none !important;
+    border-radius: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.google-play-badge a:hover img {
+    filter: brightness(1.1);
+}
+
 @keyframes fadeInDown {
     from {
         opacity: 0;
