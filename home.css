@@ -1,0 +1,212 @@
+/* Kakumei Home Theme - Deep Indigo/Violet */
+:root {
+    /* Gradient colors */
+    --gradient-1: #0f0f1a;
+    --gradient-2: #1a1a2e;
+    --gradient-3: #252545;
+
+    /* Particle effects */
+    --particle-1: rgba(140, 130, 240, 0.1);
+    --particle-2: rgba(100, 120, 220, 0.1);
+    --particle-3: rgba(170, 130, 230, 0.1);
+
+    /* Glow effects */
+    --glow-1: rgba(150, 140, 250, 0.5);
+    --glow-2: rgba(150, 140, 250, 0.3);
+    --glow-1-hover: rgba(150, 140, 250, 0.8);
+    --glow-2-hover: rgba(150, 140, 250, 0.5);
+    --glow-1-mid: rgba(150, 140, 250, 0.7);
+    --glow-2-mid: rgba(150, 140, 250, 0.4);
+
+    /* Subtitle */
+    --subtitle-color: #a9a3e0;
+    --subtitle-glow: rgba(169, 163, 224, 0.3);
+
+    /* Links */
+    --link-glow: rgba(150, 140, 250, 0.15);
+    --icon-glow: rgba(150, 140, 250, 0.5);
+    --icon-glow-hover: rgba(150, 140, 250, 0.8);
+
+    /* Hover states */
+    --hover-bg: rgba(150, 140, 250, 0.2);
+    --hover-gradient: linear-gradient(135deg, rgba(150, 140, 250, 0.2), rgba(100, 120, 220, 0.15));
+    --hover-border: rgba(150, 140, 250, 0.6);
+    --hover-shadow: rgba(150, 140, 250, 0.4);
+    --hover-text: #b8b0ff;
+
+    /* Accent colors */
+    --accent-color: #b8b0ff;
+    --accent-glow: rgba(184, 176, 255, 0.3);
+
+    /* Selection */
+    --selection-bg: rgba(150, 140, 250, 0.3);
+}
+
+/* Featured app — the hero card above the grid */
+.featured {
+    max-width: 720px;
+    margin: 0 auto 1.75rem;
+    gap: 1.25rem;
+    padding: 1.75rem 2rem;
+    justify-content: flex-start;
+    text-align: left;
+    border-color: var(--hover-border);
+    box-shadow:
+        0 8px 16px rgba(0, 0, 0, 0.2),
+        0 0 45px var(--hover-shadow),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    animation: fadeInUp 0.8s ease-out 0.35s backwards;
+}
+
+.featured-icon {
+    font-size: 3rem;
+    line-height: 1;
+    flex-shrink: 0;
+    filter: drop-shadow(0 0 20px var(--icon-glow));
+    position: relative;
+    z-index: 1;
+}
+
+.featured-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    position: relative;
+    z-index: 1;
+}
+
+.featured-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+
+.featured-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.featured-desc {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--subtitle-color);
+    line-height: 1.5;
+}
+
+/* App grid — overrides the full-width row link style from shared.css */
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.25rem;
+    max-width: 720px;
+    margin: 0 auto 3rem;
+}
+
+.app-grid a {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    animation: fadeInUp 0.8s ease-out backwards;
+}
+
+.app-grid a:nth-child(1) { animation-delay: 0.40s; }
+.app-grid a:nth-child(2) { animation-delay: 0.48s; }
+.app-grid a:nth-child(3) { animation-delay: 0.56s; }
+.app-grid a:nth-child(4) { animation-delay: 0.64s; }
+.app-grid a:nth-child(5) { animation-delay: 0.72s; }
+.app-grid a:nth-child(6) { animation-delay: 0.80s; }
+.app-grid a:nth-child(7) { animation-delay: 0.88s; }
+.app-grid a:nth-child(8) { animation-delay: 0.96s; }
+
+.app-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 22%;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 1;
+}
+
+.app-grid a:hover .app-icon {
+    transform: scale(1.08);
+}
+
+.app-name {
+    font-weight: 600;
+    line-height: 1.4;
+    position: relative;
+    z-index: 1;
+}
+
+.app-desc {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--subtitle-color);
+    line-height: 1.5;
+    position: relative;
+    z-index: 1;
+}
+
+/* Icon placeholder for apps without a logo image */
+.app-icon-placeholder {
+    width: 72px;
+    height: 72px;
+    border-radius: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    position: relative;
+    z-index: 1;
+}
+
+.site-footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--subtitle-color);
+    padding: 2rem 0 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 480px) {
+    .featured {
+        padding: 1.5rem 1.25rem;
+        gap: 1rem;
+    }
+
+    .featured-icon {
+        font-size: 2.4rem;
+    }
+
+    .featured-name {
+        font-size: 1.25rem;
+    }
+
+    .featured-desc {
+        font-size: 0.85rem;
+    }
+
+    .app-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .app-grid a {
+        padding: 1.25rem 0.75rem;
+    }
+
+    .app-icon,
+    .app-icon-placeholder {
+        width: 60px;
+        height: 60px;
+    }
+}
