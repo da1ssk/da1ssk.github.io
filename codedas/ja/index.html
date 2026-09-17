@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../../shared.css" type="text/css" rel="stylesheet" />
+	<link href="../iphone.css" type="text/css" rel="stylesheet" />
+
+	<title>コードダス サポート</title>
+	<meta name="description" content="コードダスのサポートページ。使い方とよくある質問。">
+</head>
+
+<body>
+	<div class="container">
+		<div class="logo-container">
+			<img src="../logo.png" alt="コードダスのアイコン" class="logo">
+		</div>
+		<h1>コードダス</h1>
+
+		<div class="subtitle">
+			<p>レジの前を、もっと速く</p>
+		</div>
+
+		<div class="lang-switch">
+			<a href="../">English</a>
+		</div>
+
+		<p class="lead">
+			会員証やポイントカードのQRコード・バーコードを保存して、レジの前で3タップ以内に出せるiPhoneアプリです。
+			その場で発行される決済コードのように、コードが毎回変わるカードは保存できないので、公式アプリを開く項目として登録します。
+			1つの一覧に「見せるコード」と「開くアプリ」が並ぶので、レジで探し回らずに済みます。
+		</p>
+
+		<h2 class="section-title">使い始める</h2>
+		<ul>
+			<li>右上の＋から登録します。</li>
+			<li>カメラで読み取るか、写真から読み取るか、カードに印字されている番号を手で入れます。</li>
+			<li>分かりやすい名前を付けて保存します。</li>
+			<li>行の右の星を押すとお気に入りに入ります。お気に入りは一覧の先頭に並び、ロック画面とホーム画面に出るのもここからです。</li>
+		</ul>
+
+		<h2 class="section-title">よくある質問</h2>
+
+		<div class="faq">
+			<p>
+				<strong>どの種類のコードを出せますか</strong>
+				QR、Code 128、Code 39、EAN-13です。画像は保存せず、表示するたびに値からコードを描き直します。
+			</p>
+			<p>
+				<strong>読み取ったのに「再生成に対応していません」と出ます</strong>
+				カメラが読める種類のほうが、描き直せる種類より多いためです。PDF417、Aztec、DataMatrix、マイクロQRなどが当たります。
+				読み取った値は表示しますが、コードとしては出せません。そのカードは現物を使うか、そのお店の公式アプリを開く項目として登録してください。
+			</p>
+			<p>
+				<strong>コードが毎回変わるカードは登録できますか</strong>
+				できません。その場で発行されるコードは、その瞬間しか通らないためです。
+				公式アプリを開く項目として登録すると、保存したコードと同じ一覧に並びます。
+			</p>
+			<p>
+				<strong>開きたいアプリが一覧にありません</strong>
+				一覧に載せているのは、URLスキームの出典があるアプリだけです。
+				それ以外は、URLスキームを自分で入れるか(<em>paypay</em> または <em>paypay://</em>)、ショートカットを使います。
+			</p>
+			<p>
+				<strong>ショートカットはどう使いますか</strong>
+				URLスキームが公開されていないアプリは、ショートカットアプリでそのアプリを開く項目を1つ作り、付けた名前をコードダスに入れます。
+				一字でも違うと動かないので、コピーして貼るのが確実です。「コードダス：PayPay」のように前置きを付けると、他のショートカットと混ざりません。
+				よく使うものは見本を1タップで入れられます。
+			</p>
+			<p>
+				<strong>コードを出すと画面が白く明るくなります</strong>
+				白背景で輝度を上げたほうが読み取り率が高いためです。表示中はスリープも止めます。閉じると元の輝度に戻ります。
+			</p>
+			<p>
+				<strong>ロック画面に何も出ません</strong>
+				アプリを開くと、お気に入りの上位3件が並び、12時間で自動的に消えます。
+				出ないときは、設定の「ロック画面」で「お気に入りを出す」が入になっているか、iOSの設定でライブアクティビティが入になっているかを確かめてください。
+				どちらが原因かは設定画面に出ます。
+			</p>
+			<p>
+				<strong>ホーム画面から開けますか</strong>
+				アプリアイコンを長押しすると、お気に入りの上位4件が出ます。
+			</p>
+			<p>
+				<strong>Codedas Proで何が使えますか</strong>
+				3つです。Apple Watchにコードを出すこと、場所(カードを使う店を覚えると、近くにいるときそのカードが一覧の先頭に出て、着いたら通知も届く)、iCloud同期。
+				コードを保存してレジで出すところまでは無料で、読み取り・ロック画面・バックアップも無料のままです。
+			</p>
+			<p>
+				<strong>Codedas Proは月額ですか</strong>
+				買い切りです。毎月の支払いはありません。広告も入れていません。
+			</p>
+			<p>
+				<strong>買ったのに、機種を変えたら使えません</strong>
+				設定の「購入を復元」を押してください。購入したときと同じApple Accountでサインインしている必要があります。
+			</p>
+			<p>
+				<strong>Apple Watchにコードが届きません</strong>
+				3つとも必要です。Codedas Proを持っていること、設定の「Apple Watch」で「コードを同期」が入になっていること、時計側にCodedasが入っていること。
+				アプリを開くだけの項目やショートカットの項目は、出せるコードが無いので送りません。
+			</p>
+			<p>
+				<strong>店に着いても通知が来ません</strong>
+				到着の通知には位置情報の「常に許可」が要ります。「常に」はアプリからは選べないので、iOSの設定 → Codedas → 位置情報 で切り替えてください。
+				通知の許可も必要です。なお、iOSが一度に見張れる場所の数には上限があるため、コードダスは近い場所から順に見張ります。
+			</p>
+			<p>
+				<strong>もう1台のiPhoneやiPadに同じカードが出ません</strong>
+				iCloud同期はCodedas Proの機能です。両方の端末が同じApple Accountでサインインし、iCloudが使える状態になっている必要があります。
+				いまiCloudがどうなっているかは設定画面に出ます。iCloud側の件数や、まだ送れていない件数も分かります。
+			</p>
+			<p>
+				<strong>機種変更のときはどうすればいいですか</strong>
+				iPhoneのバックアップから復元すれば、登録内容も一緒に移ります。Codedas Proを使っていればiCloudからも戻ります。
+				設定から登録内容をJSONで書き出しておくこともできます。読み込むと現在の内容を置き換えるので、消してしまったときのための控えです。
+			</p>
+			<p>
+				<strong>カードを間違えて消しました</strong>
+				削除は元に戻せません。登録し直すにはカードの現物が要ります。
+				JSONの控えがあるか、iCloud同期を使っている別の端末が残っていれば、そこから戻せます。
+			</p>
+			<p>
+				<strong>登録した内容はどこに保存されますか</strong>
+				端末の中です。Codedas Proを使っている場合は、あなた自身のiCloudにも保存されます。
+				開発者のサーバーには送りません(そもそも持っていません)。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。
+			</p>
+			<p>
+				<strong>動作環境を教えてください</strong>
+				iOS 18以降のiPhoneです。時計のアプリはwatchOS 10以降が必要です。
+			</p>
+		</div>
+
+		<h2 class="section-title">解決しないときは</h2>
+		<p class="lead">
+			<a href="mailto:kakumeiapps@gmail.com">kakumeiapps@gmail.com</a> までご連絡ください。
+			何をしたときに何が起きたかと、iOSのバージョン、カードのお店の名前があると調べやすくなります。
+		</p>
+
+		<div class="links-container">
+			<div>
+				<a href="privacy.html">
+					<span class="icon">🔒</span>
+					<span>プライバシーポリシー</span>
+				</a>
+			</div>
+			<div>
+				<a href="terms.html">
+					<span class="icon">📄</span>
+					<span>利用規約</span>
+				</a>
+			</div>
+			<div>
+				<a href="https://apps.apple.com/jp/developer/daichi-sasaki/id348827338" target="_blank" rel="noopener">
+					<span class="icon">📱</span>
+					<span>Kakumeiの他のアプリ</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

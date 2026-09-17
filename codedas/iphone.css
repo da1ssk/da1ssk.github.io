@@ -1,0 +1,122 @@
+/* Codedas Theme - Vermillion */
+:root {
+    /* Gradient colors */
+    --gradient-1: #151312;
+    --gradient-2: #241916;
+    --gradient-3: #43211a;
+
+    /* Particle effects */
+    --particle-1: rgba(224, 80, 60, 0.1);
+    --particle-2: rgba(203, 62, 44, 0.1);
+    --particle-3: rgba(240, 140, 120, 0.08);
+
+    /* Glow effects */
+    --glow-1: rgba(224, 80, 60, 0.5);
+    --glow-2: rgba(224, 80, 60, 0.3);
+    --glow-1-hover: rgba(224, 80, 60, 0.8);
+    --glow-2-hover: rgba(224, 80, 60, 0.5);
+    --glow-1-mid: rgba(224, 80, 60, 0.7);
+    --glow-2-mid: rgba(224, 80, 60, 0.4);
+
+    /* Subtitle */
+    --subtitle-color: #f3a596;
+    --subtitle-glow: rgba(243, 165, 150, 0.3);
+
+    /* Links */
+    --link-glow: rgba(224, 80, 60, 0.15);
+    --icon-glow: rgba(224, 80, 60, 0.5);
+    --icon-glow-hover: rgba(224, 80, 60, 0.8);
+
+    /* Hover states */
+    --hover-bg: rgba(224, 80, 60, 0.2);
+    --hover-gradient: linear-gradient(135deg, rgba(224, 80, 60, 0.2), rgba(203, 62, 44, 0.15));
+    --hover-border: rgba(224, 80, 60, 0.6);
+    --hover-shadow: rgba(224, 80, 60, 0.4);
+    --hover-text: #e0503c;
+
+    /* Accent colors */
+    --accent-color: #e0503c;
+    --accent-glow: rgba(224, 80, 60, 0.3);
+
+    /* Selection */
+    --selection-bg: rgba(224, 80, 60, 0.3);
+}
+
+/* Support page: section headings, answers and inline links.
+   shared.css styles every <a> as a full-width button, so links inside
+   running text need to be put back inline. */
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 3rem 0 0.5rem;
+    text-align: center;
+    text-shadow: 0 0 30px var(--glow-2);
+    position: relative;
+    z-index: 1;
+}
+
+.lead {
+    text-align: center;
+}
+
+p a,
+li a {
+    display: inline;
+    width: auto;
+    padding: 0;
+    gap: 0;
+    font-size: inherit;
+    font-weight: 600;
+    color: var(--accent-color);
+    background: none;
+    backdrop-filter: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
+}
+
+p a::before,
+li a::before {
+    display: none;
+}
+
+p a:hover,
+li a:hover {
+    transform: none;
+    background: none;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+/* Answers sit in the same card as their question, so the question needs
+   less space above it than a standalone <strong> gets from shared.css. */
+.faq p {
+    margin: 0.75rem 0;
+}
+
+.faq p strong {
+    margin: 0 0 0.5rem;
+}
+
+.faq ul {
+    margin: -0.5rem 0 1rem;
+    padding: 0 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.lang-switch {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.lang-switch a {
+    display: inline-flex;
+    width: auto;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.95rem;
+}
