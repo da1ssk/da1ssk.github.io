@@ -107,11 +107,17 @@ li a:hover {
     z-index: 1;
 }
 
-.lang-switch {
-    text-align: center;
-    margin-bottom: 1.5rem;
+/* The container is the positioning box for the language switch in its
+   top right corner. */
+.container {
     position: relative;
-    z-index: 1;
+}
+
+.lang-switch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
 }
 
 .lang-switch a {
@@ -119,4 +125,33 @@ li a:hover {
     width: auto;
     padding: 0.5rem 1.25rem;
     font-size: 0.95rem;
+}
+
+/* Screenshots, side by side. Narrow screens scroll the row sideways
+   rather than stacking, so the shots stay the same size everywhere. */
+.shots {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    margin: 2.5rem 0 3rem;
+    padding-bottom: 0.5rem;
+    overflow-x: auto;
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 0.8s ease-out 0.45s backwards;
+}
+
+.shots img {
+    width: 220px;
+    height: auto;
+    flex: 0 0 auto;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35), 0 0 40px var(--link-glow);
+}
+
+@media (max-width: 480px) {
+    .shots img {
+        width: 170px;
+    }
 }
