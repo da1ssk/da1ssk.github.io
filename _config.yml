@@ -1,0 +1,3 @@
+# Jekyllは . で始まるフォルダを公開しない。Universal Linkの設定ファイルを出すために要る。
+include:
+  - .well-known

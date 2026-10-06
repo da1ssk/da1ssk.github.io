@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["HR77YM88BM.kakumei.codedas"],
+        "components": [
+          { "/": "/codedas/add/*", "comment": "共有されたカード" },
+          { "/": "/codedas/add", "comment": "末尾の / が無い形" }
+        ]
+      }
+    ]
+  }
+}

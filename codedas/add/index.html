@@ -1,0 +1,94 @@
+<!doctype html>
+<!--
+  共有されたカードのリンクの行き先。コードダスが入っていればiOSがアプリで開くので、
+  このページが出るのは、入っていないときと、LINEなどアプリ内のブラウザで開いたとき。
+
+  カードの中身は # の後ろにある。# から先はサーバーへ送られないので、番号は
+  GitHubに届かない。このページも外へは何も送らない(外部のスクリプトも読まない)。
+  形は da1ssk/Codedas の Codedas/Services/SharedCard.swift と揃えること。
+-->
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6809679135">
+<meta property="og:title" content="コードダスでカードを受け取る">
+<meta property="og:description" content="会員証やポイントカードのコードを、レジで3タップで出せるアプリです。">
+<title>コードダス — カードを受け取る</title>
+<style>
+  :root { color-scheme: light dark; --accent: #0a7cff; }
+  body { max-width: 30rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem;
+         font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+         text-align: center; }
+  h1 { font-size: 1.45rem; margin: 0 0 .5rem; overflow-wrap: anywhere; }
+  .lead { color: #888; margin: 0 0 2rem; }
+  ol { text-align: left; padding-left: 1.5rem; margin: 0 0 2rem; }
+  li { margin: 1.5rem 0; }
+  li p { margin: .25rem 0 .75rem; color: #888; font-size: .9rem; }
+  .button { display: block; padding: .85rem 1rem; border-radius: 14px;
+            font-weight: 600; text-decoration: none; text-align: center; }
+  .primary { background: var(--accent); color: #fff; }
+  .secondary { border: 1.5px solid var(--accent); color: var(--accent); }
+  .hidden { display: none; }
+  footer { margin-top: 3rem; font-size: .85rem; }
+  footer a { color: #888; }
+</style>
+
+<h1 id="title">コードダス</h1>
+<p class="lead" id="lead">会員証やポイントカードのコードを、レジで3タップで出せるアプリです。</p>
+
+<ol>
+  <li>
+    <strong id="step1">App Storeから入れる</strong>
+    <p id="step1note">無料です。広告も、アカウントの登録もありません。</p>
+    <a class="button primary" id="store" href="https://apps.apple.com/app/id6809679135">App Storeで入手</a>
+  </li>
+  <li id="open-step" class="hidden">
+    <strong id="step2">このページに戻って開く</strong>
+    <p id="step2note">入れたあと(すでに入っていれば今すぐ)ここを押すと、カードが追加されます。追加する前に確認が出ます。</p>
+    <a class="button secondary" id="open" href="#">コードダスで開く</a>
+  </li>
+</ol>
+
+<footer><a id="support" href="../ja/">サポート</a> · <a id="privacy" href="../ja/privacy.html">プライバシー</a></footer>
+
+<script>
+  // SharedCard.fragment と同じ形: n=名前&t=種類&c=値
+  const fields = {};
+  for (const pair of location.hash.slice(1).split("&")) {
+    const at = pair.indexOf("=");
+    if (at < 0) continue;
+    try { fields[pair.slice(0, at)] = decodeURIComponent(pair.slice(at + 1)); } catch (e) {}
+  }
+  const name = (fields.n || "").trim();
+  const ok = name && fields.t && fields.c;
+  const english = !/^ja\b/i.test(navigator.language || "ja");
+  const $ = (id) => document.getElementById(id);
+
+  if (english) {
+    document.documentElement.lang = "en";
+    document.title = "Codedas — Receive a card";
+    $("title").textContent = "Codedas";
+    $("lead").textContent = "Keeps the codes from your membership and loyalty cards, and shows them in three taps at the register.";
+    $("step1").textContent = "Get it from the App Store";
+    $("step1note").textContent = "Free. No ads, no sign-up.";
+    $("store").textContent = "Download on the App Store";
+    $("step2").textContent = "Come back here and open it";
+    $("step2note").textContent = "Once installed (or right away if you already have it), tap here to add the card. You'll be asked before anything is added.";
+    $("open").textContent = "Open in Codedas";
+    $("support").textContent = "Support";
+    $("support").href = "../";
+    $("privacy").textContent = "Privacy";
+    $("privacy").href = "../privacy.html";
+  }
+
+  if (ok) {
+    // 名前は人が付けたもの。HTMLとして読まず、文字としてだけ入れる。
+    $("title").textContent = english ? `“${name}” was shared with you` : `「${name}」が届きました`;
+    $("lead").textContent = english
+      ? "Add it to Codedas and show it at the register in three taps."
+      : "コードダスに追加すると、レジで3タップで出せます。";
+    $("open").href = "codedas://add" + location.hash;
+    $("open-step").classList.remove("hidden");
+  }
+</script>
+</html>
